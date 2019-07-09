@@ -1,0 +1,54 @@
+body {
+  background: url(media/farm_background.jpg) no-repeat fixed;
+  background-size: 1300px;
+  color: rgb(18, 18, 73);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px
+}
+
+button {
+  background-color: rgb(121, 53, 53);
+  padding: 10px 15px;
+  border-width: 0px;
+  border-radius: 10px;
+  margin-right: 20px;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+button:hover {
+  background-color: aqua;
+  color: black;
+}
+
+button:active {
+  color: white
+}
+
+#main {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 150px;
+  width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#feedback {
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrong {
+  background-color: rgb(253, 182, 182);
+  padding: 20px 50px;
+}
+
+.right {
+  background-color: rgb(182, 253, 182);
+  padding: 20px 50px;
+}

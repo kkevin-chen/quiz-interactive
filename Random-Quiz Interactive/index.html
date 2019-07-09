@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farm Quiz!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <div id='main'>
+    <h1>Farm Quiz!</h1>
+    <hr>
+
+    <div id='q1'>
+      <h2>Question 1</h2>
+        <p>Which country has the most arable land?
+          <a href="https://en.wikipedia.org/wiki/Land_use_statistics_by_country"
+          target="_blank">(Link for a hint)</a>
+        </p>
+        <img src="media/arable_land.jpg" alt="Some arable land" height="200px">
+        <p>Type your answer: <input type="text" id='quest1'></p>
+    </div>
+      <hr>
+
+    <div id='q2'>
+      <h2>Question 2</h2>
+        <p>What farm animal is played in this video?</p>
+        <p>
+          <audio controls>
+            <source src="media/Cow Moo.mp3" type="audio/mpeg">
+            <source src="media/Cow Moo.wav" type="audio/wav">
+              Your browser does not support the audio element.
+          </audio>
+          <p>Type your answer: <input type="text" id='quest2'></p>
+        </p>
+    </div>
+      <hr>
+
+    <div id='q3'>
+      <h2>Question 3</h2>
+        <p>Which of the following animals is <strong>NOT</strong> commonly referred to as "livestock"?</p>
+
+        <!-- Multiple Choice -->
+        <label for="cattle">Cattle</label>
+        <input type="radio" name="livestock" id="cattle" value="wrong"><br>
+
+        <label for="chicken">Chicken</label>
+        <input type="radio" name="livestock" id="chicken" value="right"><br>
+
+        <label for="sheep">Sheep</label>
+        <input type="radio" name="livestock" id="sheep" value="wrong"><br>
+
+        <label for="goat">Goat</label>
+        <input type="radio" name="livestock" id="goat" value="wrong"><br><br>
+    </div>
+
+      <hr>
+
+    <div id='q4'>
+      <h2>Question 4</h2>
+        <p>What am I?
+        <ul>
+          <li>I am a the most farmed crop in the world, and I am classified as a cereal.</li>
+          <li>Globally, I am worth 337 billion dollars as of 2012. Global production of me is 741 million tons as of 2011!</li>
+          <li>I am farmed in paddies (a flooded field used for growing crops).</li>
+        </ul>
+        </p>
+
+        <img src="media/mystery_crop.jpg" alt="The Mystery Crop" height="200px">
+        <p>Type your answer: <input type="text" id='quest4'></p>
+    </div>
+      <hr>
+    
+    <h2>Results</h2>
+    <button type="button" id='submit'>Mark Answers</button> Your score is <span id='mark'>_ </span>/4 (<span id='mark-percent'> __</span>%).
+    <p id='feedback'></p>
+  </div>
+  
+  <script src='main.js'></script>
+
+</body>
+</html>
